@@ -1,0 +1,93 @@
+.educationdetails-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+  font-family: "cairo";
+  color: var(--white-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.educationdetails-container .line {
+  position: relative;
+  height: 80vh;
+  width: 3px;
+  background-color: var(--logo-green);
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: var(--logo-green);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.top-dot {
+  top: 0;
+  left: -8.5px;
+}
+
+.middle-dot {
+  top: 50%;
+  left: -8.5px;
+  transform: translateY(-50%);
+}
+
+.bottom-dot {
+  bottom: 0;
+  left: -8.5px;
+}
+.educationdetails-container .bt-details {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.educationdetails-container .bt-details div,
+.educationdetails-container .d-details div {
+  background-color: var(--nav-bg);
+  border: 2px solid var(--logo-green);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.educationdetails-container .d-details {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.education .education-heading {
+  margin-bottom: 50px;
+}
+
+.vertical-timeline-element-content {
+  font-family: "cairo";
+  background: var(--nav-bg) !important;
+  color: var(--white-color);
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid var(--logo-green) !important;
+}
+
+.vertical-timeline-element-icon svg {
+  width: 50px !important;
+  height: 50px !important;
+  left: 29% !important;
+  bottom: -17px !important;
+}
+
+@media (min-width: 320px) and (max-width: 521px) {
+  .education{
+   width:488px;
+  }
+  .education .list{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+ }
