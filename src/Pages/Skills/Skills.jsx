@@ -1,6 +1,6 @@
 import React from "react";
 import Heading from "../../Components/Heading/Heading";
-import ScrollAnimation from "react-animate-on-scroll"
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "./Skills.css";
 import Html from "../../svg/Html";
 import Css from "../../svg/Css";
@@ -54,7 +54,7 @@ const Skills = () => {
       </div>
       <div className="skills-list">
         {skillsData.map((skill, index) => (
-          <ScrollAnimation
+          <AnimationOnScroll
             key={index}
             animateIn={`fadeIn${index + 1}`}
             delay={index * 100} 
@@ -66,7 +66,7 @@ const Skills = () => {
               <div className="skill-title">{skill.title}</div>
               <div className="description">{skill.description}</div>
             </div>
-          </ScrollAnimation>
+          </AnimationOnScroll>
         ))}
       </div>
     </section>
