@@ -70,7 +70,6 @@ const Navbar = () => {
           onClick={() => {
             scrollToSection(id);
             console.log("Link clicked");
-            setClicked(!clicked );
           }}
         >
           {label}
@@ -135,6 +134,7 @@ const Navbar = () => {
             </svg>
           </div>
         </div>
+        
       </div> 
       }
     </nav>
