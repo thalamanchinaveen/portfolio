@@ -69,7 +69,6 @@ const Navbar = () => {
           className={`nav-link ${id === activeSection ? "active" : ""}`}
           onClick={() => {
             scrollToSection(id);
-            console.log("Link clicked");
           }}
         >
           {label}
