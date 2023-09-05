@@ -6,7 +6,7 @@ const About = () => {
   const [showDiv, setShowDiv] = useState(false);
 
   const handleEmailButtonClick = () => {
-    const email = "nthalamanchi@gmail.com";
+    const email = "thalamanchinaveen@gmail.com";
     const mailtoLink = `mailto:${email}`;
     window.location.href = mailtoLink;
   };
@@ -48,9 +48,15 @@ const About = () => {
           </div>
           <p className="dots">{".".repeat(51)}</p>
           <div className="address">
-              <h4>Contact : <span>8639507812</span></h4>
-              <h4>Email : <span>nthalamanchi@gmail.com</span></h4>
-              <h4>City : <span>SPSR Nellore</span></h4>
+            <h4>
+              Contact : <span>+91-9490780810</span>
+            </h4>
+            <h4>
+              Email : <span>thalamanchinaveen@gmail.com</span>
+            </h4>
+            <h4>
+              City : <span>SPSR Nellore</span>
+            </h4>
           </div>
           <p className="dots">{".".repeat(51)}</p>
           <div className="contact-me" onClick={handleEmailButtonClick}>
@@ -72,23 +78,27 @@ const About = () => {
         <div className="content">
           <div className="hello">hello world ,</div> <br />
           <div className="matter">
-            Myself Thalamanchi Naveen Kumar, a dedicated UI Developer with a
-            passion for crafting captivating digital experiences. With 6 months
-            of immersive internship experience in ReactJS development, I embody
-            resourcefulness and innovation in my approach. My insatiable
-            appetite for learning drives me to continually refine my skills,
-            aligning them with the latest industry trends. I thrive on the
-            challenge of pushing boundaries, channeling my creativity into
-            designing and developing cutting-edge websites. Proficient in a
-            diverse array of tools and technologies, including JavaScript, React
-            JS, Bootstrap, and CSS, I have a solid foundation in building
-            dynamic web applications and scripts. With an eye for detail and a
-            commitment to excellence, I bring my expertise to the table when
-            developing solutions for both public sector clients and beyond.As I
-            move forward, I am dedicated to exceeding client expectations,
-            consistently delivering projects to the highest standards. Let's
-            collaborate to turn ideas into reality and shape the digital
-            landscape together.
+            I am Thalamanchi Naveen Kumar, a skilled UI/Frontend Developer with
+            over 2+ years of experience in React.js and a comprehensive
+            understanding of web technologies such as HTML, CSS, and JavaScript.
+            My expertise extends to modern frontend tools and practices,
+            enabling me to create engaging, responsive web interfaces and
+            transform design concepts into high-performance applications.
+            My commitment to clean and efficient code, coupled with a dedication
+            to industry best practices, drives me to craft innovative UI/UX
+            solutions. As a collaborative team player, I thrive in group
+            settings, where I contribute to achieving project goals and staying
+            updated on emerging industry trends.
+            As a UI/Frontend Developer, I excel in problem-solving and attention
+            to detail. I have a talent for breaking down complex design
+            requirements into manageable components and implementing them
+            meticulously to create seamless user experiences. My passion for
+            user-centered design and constant learning in web development make
+            me adaptable and versatile. I believe a well-crafted user interface
+            should be visually appealing, functional, intuitive, and impactful.
+            I am committed to delivering solutions that surpass client and user
+            expectations, whether it's optimizing performance, enhancing
+            accessibility, or staying current with design trends.
           </div>
         </div>
       </div>
