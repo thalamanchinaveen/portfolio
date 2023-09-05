@@ -1,7 +1,7 @@
 # portfolio
 Welcome to my personal portfolio website repository! This project showcases my skills, projects, and experiences in a visually engaging manner. The website serves as a dynamic representation of my professional journey and achievements.
 
-🌐 Live Demo: https://naveenthalamanchi.netlify.com
+🌐 Live Demo: https://thalamanchinaveen.netlify.com
 
 ## Key Features
 
