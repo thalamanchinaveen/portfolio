@@ -79,7 +79,7 @@ const About = () => {
           <div className="hello">hello world ,</div> <br />
           <div className="matter">
             I am Thalamanchi Naveen Kumar, a skilled UI/Frontend Developer with
-            over 2+ years of experience in React.js and a comprehensive
+            good experience in React.js and a comprehensive
             understanding of web technologies such as HTML, CSS, and JavaScript.
             My expertise extends to modern frontend tools and practices,
             enabling me to create engaging, responsive web interfaces and
