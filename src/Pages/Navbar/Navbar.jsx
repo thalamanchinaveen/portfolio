@@ -117,7 +117,7 @@ const Navbar = () => {
         <div className="navbar-right2">
           <div className="button-div">
             <button>
-              <a href={resume} download="resume">
+              <a href={" "} download="resume">
                 DOWNLOAD CV
               </a>
             </button>
