@@ -4,6 +4,7 @@ import Logo from "../../svg/Logo";
 import resume from "../../documents/Naveenkumar.pdf";
 import Menu from "../../svg/Menu";
 import Close from "../../svg/Close";
+import Popup from "../../Components/PopUp/Popup";
 
 const sections = [
   { id: "about", label: "ABOUT" },
@@ -15,6 +16,15 @@ const sections = [
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
   const [activeSection, setActiveSection] = useState(sections[0].id);
+
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  const handleDownloadClick = () => {
+    setIsDownloading(true);
+    setTimeout(() => {
+      setIsDownloading(false);
+    }, 2000);
+  };
 
   const clickHandler = () => {
     setClicked(!clicked);
@@ -77,11 +87,12 @@ const Navbar = () => {
       </div>
       <div className="navbar-right">
         <div className="button-div">
-          <button>
+          <button onClick={handleDownloadClick}>
             <a href={resume} download="ThalamanchiNaveen.pdf">
               DOWNLOAD CV
             </a>
           </button>
+          {isDownloading && <Popup text="Downloading..." />}
         </div>
         <div className="svg-div">
           <svg
@@ -115,13 +126,14 @@ const Navbar = () => {
           ))}
         </div>
         <div className="navbar-right2">
-          <div className="button-div">
-            <button>
-              <a href={resume} download="ThalamanchiNaveen.pdf">
-                DOWNLOAD CV
-              </a>
-            </button>
-          </div>
+        <div className="button-div">
+          <button onClick={handleDownloadClick}>
+            <a href={resume} download="ThalamanchiNaveen.pdf">
+              DOWNLOAD CV
+            </a>
+          </button>
+          {isDownloading && <Popup text="Downloading..." />}
+        </div>
           <div className="svg-div">
             <svg
               xmlns="http://www.w3.org/2000/svg"
