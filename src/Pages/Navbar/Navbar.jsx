@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import Logo from "../../svg/Logo";
-// import resume from "../../documents/Naveenkumar.pdf";
+import resume from "../../documents/Naveenkumar.pdf";
 import Menu from "../../svg/Menu";
 import Close from "../../svg/Close";
 
@@ -78,7 +78,7 @@ const Navbar = () => {
       <div className="navbar-right">
         <div className="button-div">
           <button>
-            <a href={" "} download=" ">
+            <a href={resume} download="ThalamanchiNaveen.pdf">
               DOWNLOAD CV
             </a>
           </button>
@@ -117,7 +117,7 @@ const Navbar = () => {
         <div className="navbar-right2">
           <div className="button-div">
             <button>
-              <a href={" "} download="">
+              <a href={resume} download="ThalamanchiNaveen.pdf">
                 DOWNLOAD CV
               </a>
             </button>
